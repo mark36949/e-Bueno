@@ -11,9 +11,9 @@ from linebot.models import *
 app = Flask(__name__)
 
 # Channel Access Token
-line_bot_api = LineBotApi('8wFacFsGNdnNJNLijxay336uu51vdtWRbHb8xH0bCquvIowvaIAJsUrEr/HAY3hLoQie+PMYUSxeUIPtm2jRlSeqTmnVNOaxEyI9iVp+R+3P1q2JzrdDfCoO+351rjjZb5GBzFXWq3gRzM4SUEscqQdB04t89/1O/w1cDnyilFU=')
+line_bot_api = LineBotApi('Q7mrDCfQD13+6UCYOjRGYVmyD/BS8uTyphbksJYC6UTEPqxIlcrQ9dsb6o01jgVOoQie+PMYUSxeUIPtm2jRlSeqTmnVNOaxEyI9iVp+R+1/FdRwUaPSOhUpgP9+g64W7WU6vu/co1w5l2K0qkTwVQdB04t89/1O/w1cDnyilFU=')
 # Channel Secret
-handler = WebhookHandler('338567064a38b3ff17884a5ac3096e5f')
+handler = WebhookHandler('60d1c988a04ff951d708da2c92e55d9f')
 
 
 
@@ -110,8 +110,8 @@ def handle_message(event):
     elif text == 'c13' or text == 'C13' or text == 'b13' or text == 'B13':
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text='Let’s think again!'))
     elif text == 'a13' or text == 'A13':
-        line_bot_api.reply_message(event.reply_token,TextSendMessage(text='Great! You got today’s easter egg! Please enter "EG1" to get today’s easter egg!'))
-    elif text == 'EG1' or text == 'eg1':
+        line_bot_api.reply_message(event.reply_token,TextSendMessage(text='Great! You got today’s easter egg! Please enter "EG1_N1E_expensive" to get today’s easter egg!'))
+    elif text == 'EG1_N1E_expensive' or text == 'eg1_n1e_expensive' or text == 'Eg1_n1e_expensive':
         message = ImageSendMessage(
             original_content_url='https://i.imgur.com/RL86CjW.png',
             preview_image_url='https://i.imgur.com/RL86CjW.png'
@@ -132,8 +132,8 @@ def handle_message(event):
     elif text == 'a23' or text == 'A23' or text == 'b23' or text == 'B23':
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text='Let’s think again!'))
     elif text == 'c23' or text == 'C23':
-        line_bot_api.reply_message(event.reply_token,TextSendMessage(text='Great! You got today’s easter egg! Please enter "EG2" to get today’s easter egg!'))
-    elif text == 'EG2' or text == 'eg2':
+        line_bot_api.reply_message(event.reply_token,TextSendMessage(text='Great! You got today’s easter egg! Please enter "EG2_N1N_economy" to get today’s easter egg!'))
+    elif text == 'EG2_N1N_economy' or text == 'eg2_n1n_economy' or text == 'Eg2_n1n_economy':
         message = ImageSendMessage(
             original_content_url='https://i.imgur.com/ftA2M9S.png',
             preview_image_url='https://i.imgur.com/ftA2M9S.png'
@@ -145,7 +145,7 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text='Q31. What could be inferred from the news?\nA31. China’s economic growth is getting well.\nB31. People in China will not use smartphones anymore.\nC31. People in China becomes reserved when purchasing.\n\nPlease show me the right answer! A31, B31, or C31?'))
     elif text == 'b31' or text == 'B31' or text == 'a31' or text == 'A31':
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text='Let’s think again!'))
-    elif text == 'c21' or text == 'C21':
+    elif text == 'c31' or text == 'C31':
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text='Great! Let’s move on!\n\nQ32. What does the word “consequence” mean in the news?\nA32. the result\nB32. the reason\nC32. the building\n\nPlease show me the right answer! A32, B32, or C32?'))
     elif text == 'b32' or text == 'B32' or text == 'c32' or text == 'C32':
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text='Let’s think again!'))
@@ -154,8 +154,8 @@ def handle_message(event):
     elif text == 'a33' or text == 'A33' or text == 'c33' or text == 'C33':
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text='Let’s think again!'))
     elif text == 'b33' or text == 'B33':
-        line_bot_api.reply_message(event.reply_token,TextSendMessage(text='Great! You got today’s easter egg! Please enter "EG3" to get today’s easter egg!'))
-    elif text == 'EG3' or text == 'eg3':
+        line_bot_api.reply_message(event.reply_token,TextSendMessage(text='Great! You got today’s easter egg! Please enter "EG3_N1C_consumer" to get today’s easter egg!'))
+    elif text == 'EG3_N1C_consumer' or text == 'eg3_n1c_consumer' or text == 'Eg3_n1c_consumer':
         message = ImageSendMessage(
             original_content_url='https://i.imgur.com/OguVCAa.png',
             preview_image_url='https://i.imgur.com/OguVCAa.png'
@@ -185,8 +185,8 @@ def handle_message(event):
     elif text == 'c43' or text == 'C43' or text == 'a43' or text == 'A43':
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text='Let’s think again!'))
     elif text == 'b43' or text == 'B43':
-        line_bot_api.reply_message(event.reply_token,TextSendMessage(text='Great! You got today’s easter egg! Please enter "EG4" to get today’s easter egg!'))
-    elif text == 'EG4' or text == 'eg4':
+        line_bot_api.reply_message(event.reply_token,TextSendMessage(text='Great! You got today’s easter egg! Please enter "EG4_N2E_electric" to get today’s easter egg!'))
+    elif text == 'EG4_N2E_electric' or text == 'eg4_n2e_electric' or text == 'Eg4_n2e_electric':
         message = ImageSendMessage(
             original_content_url='https://i.imgur.com/WwbIMsF.png',
             preview_image_url='https://i.imgur.com/WwbIMsF.png'
@@ -207,8 +207,8 @@ def handle_message(event):
     elif text == 'c53' or text == 'C53' or text == 'b53' or text == 'B53':
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text='Let’s think again!'))
     elif text == 'a53' or text == 'A53':
-        line_bot_api.reply_message(event.reply_token,TextSendMessage(text='Great! You got today’s easter egg! Please enter "EG5" to get today’s easter egg!'))
-    elif text == 'EG5' or text == 'eg5':
+        line_bot_api.reply_message(event.reply_token,TextSendMessage(text='Great! You got today’s easter egg! Please enter "EG5_N2N_goverment" to get today’s easter egg!'))
+    elif text == 'EG5_N2N_goverment' or text == 'eg5_n2n_goverment' or text == 'Eg5_n2n_goverment':
         message = ImageSendMessage(
             original_content_url='https://i.imgur.com/ZBAInyI.png',
             preview_image_url='https://i.imgur.com/ZBAInyI.png'
@@ -229,8 +229,8 @@ def handle_message(event):
     elif text == 'a63' or text == 'A63' or text == 'b63' or text == 'B63':
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text='Let’s think again!'))
     elif text == 'c63' or text == 'C63':
-        line_bot_api.reply_message(event.reply_token,TextSendMessage(text='Great! You got today’s easter egg! Please enter "EG6" to get today’s easter egg!'))
-    elif text == 'EG6' or text == 'eg6':
+        line_bot_api.reply_message(event.reply_token,TextSendMessage(text='Great! You got today’s easter egg! Please enter "EG6_N2C_ambitious" to get today’s easter egg!'))
+    elif text == 'EG6_N2C_ambitious' or text == 'eg6_n2c_ambitious' or text == 'Eg6_n2c_ambitious':
         message = ImageSendMessage(
             original_content_url='https://i.imgur.com/bAkjYLi.png',
             preview_image_url='https://i.imgur.com/bAkjYLi.png'
